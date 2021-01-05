@@ -1,3 +1,9 @@
 body {
-    
+    font-family: "Relaway-Regular";
 }
+
+@font-face {
+    font-family: "Relaway-Regular";
+    src: url('Relaway-Regular.ttf');
+}
+
