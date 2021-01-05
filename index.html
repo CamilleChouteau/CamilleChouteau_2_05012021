@@ -15,15 +15,56 @@
             </p>
         </header>
 
+        <nav>
+            <ul>
+                <li><a href="#">Hébergement</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
+
         <main>
             <!-- Describes the content of the page -->
             <section id="description">
-
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
             </section>
 
             <!-- Search tools -->
             <section id="search">
+                <form method="post" action="traitement.php">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" placeholder="Marseille, France"/>
+                    <input type="submit" value="Rechercher" />
+                </form>
+            </section>
 
+            <!-- Filters -->
+            <section id="filters">
+                <h2>Filtres</h2>
+                <div>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Économique</p>
+                </div>
+                <div>
+                    <i class="fas fa-child"></i>
+                    <p>Familial</p>
+                </div>
+                <div>
+                    <i class="fas fa-heart"></i>
+                    <p>Romantique</p>
+                </div>
+                <div>
+                    <i class="fas fa-dog"></i>
+                    <p>Animaux autorisés</p>
+                </div>
+            </section>
+
+            <!-- Informations about how many lodgings-->
+            <div>
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
             </section>
 
             <!-- Lodging in Marseille -->

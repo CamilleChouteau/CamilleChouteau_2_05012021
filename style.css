@@ -7,3 +7,6 @@ body {
     src: url('Relaway-Regular.ttf');
 }
 
+ul {
+    list-style-type: none;
+}
