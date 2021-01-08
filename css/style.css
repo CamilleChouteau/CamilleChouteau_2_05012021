@@ -90,6 +90,14 @@ input::placeholder {
 
 /* Filters + logo info */
 
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px;
+    padding-top: 30px;
+}
+
 h3 {
     font-family: "ralewaybold";
 }
@@ -110,13 +118,6 @@ h3 {
     color: #0065FC;
 }
 
-.logo-info {
-    border: 3px #F2F2F2 solid;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
-    color: #0065FC;
-}
-
 .filter-button {
     display: grid;
     grid-template-columns: min-content max-content;
@@ -133,8 +134,16 @@ h3 {
     -webkit-transition: background-color, 0.2s linear 0s;
 }
 
-/* N'affecte que les paragraphes (<p>) qui sont dans une balise qui a la classe 'filter-button' */
+/* N'affecte que les paragraphes (<p>) qui sont dans la balise qui a la classe 'filter-button' grâce au chevron '>' */
 .filter-button > p {
     padding: 0px 15px 0px 15px;
     font-family: "ralewaybold";
+}
+
+/* Logo info */
+.logo-info {
+    border: 3px #F2F2F2 solid;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    color: #0065FC;
 }
