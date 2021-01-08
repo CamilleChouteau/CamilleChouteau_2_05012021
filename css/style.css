@@ -12,9 +12,8 @@ body {
 
 }
 
-ul {
-    list-style-type: none;
-}
+
+/* Header + menu */
 
 .logo {
     width: 96px;
@@ -25,6 +24,9 @@ header {
     grid-template-columns: min-content auto min-content;
  }
 
+ul {
+    list-style-type: none;
+}
  .menu {
     display: flex;
     justify-content: flex-end;
@@ -47,21 +49,28 @@ a:hover {
     font-weight: bold;
 }
 
+/* Search button */
+
+.search-button {
+    display: grid;
+    grid-template-columns: min-content 234px min-content;
+    align-items: stretch;
+    grid-template-rows: 50px;
+}
 button {
     background-color: #0065FC;
     color: white;
     text-align: center;
-    padding: 19px;
+    padding: 0px 19px 0px 19px;
     border-radius: 0px 15px 15px 0px;
     font-family: 'ralewayregular';
-    margin: -5px;
     font-weight: bold;
     border: none;
 }
 
 input {
     border: 2px #f2f2f2 solid;
-    padding: 17px;
+    padding: 0px 17px 0px 17px;
     font-weight: bold;
     font-family: "ralewayregular"
 
@@ -69,10 +78,59 @@ input {
 
 .mapmarker {
     border: #f2f2f2 solid;
-    padding: 16px 19px 18px 17px;;
+    padding: 0px 15px 0px 17px;;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    margin: -5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Filters + logo info */
+
+.filters-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filter-money {
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 30px;
+    color: #0065FC;
+}
+
+.filter-child {
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 30px;
+    color: #0065FC;
+}
+
+.filter-heart {
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 30px;
+    color: #0065FC;
+}
+
+.filter-pet {
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 30px;
+    color: #0065FC;
+}
+
+.logo-info {
+    border: 3px #F2F2F2 solid;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    color: #0065FC;
+}
 
