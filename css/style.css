@@ -3,16 +3,6 @@ body {
     padding: 50px;
 }
 
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('fonts/raleway-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 /* Header + menu */
 
 .logo {
@@ -27,7 +17,8 @@ header {
 ul {
     list-style-type: none;
 }
- .menu {
+
+.menu {
     display: flex;
     justify-content: flex-end;
     margin: 0px;
@@ -49,6 +40,10 @@ ul {
     text-decoration: none;
     color: #0065FC;
     font-weight: bold;
+}
+
+h1 {
+    font-family: "ralewaybold";
 }
 
 /* Search button */
@@ -75,7 +70,11 @@ input {
     padding: 0px 17px 0px 17px;
     font-weight: bold;
     font-family: "ralewayregular"
+}
 
+/* Demander si je laisse en noir (moins ergonomique mais comme la maquette) ou en gris */
+input::placeholder {
+    color: black;
 }
 
 .mapmarker {
@@ -91,37 +90,18 @@ input {
 
 /* Filters + logo info */
 
+h3 {
+    font-family: "ralewaybold";
+}
+
 .filters-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 24px;
 }
 
-.filter-money {
-    border: #DEEBFF solid;
-    background-color: #DEEBFF;
-    padding: 15px;
-    border-radius: 30px;
-    color: #0065FC;
-}
-
-.filter-child {
-    border: #DEEBFF solid;
-    background-color: #DEEBFF;
-    padding: 15px;
-    border-radius: 30px;
-    color: #0065FC;
-}
-
-.filter-heart {
-    border: #DEEBFF solid;
-    background-color: #DEEBFF;
-    padding: 15px;
-    border-radius: 30px;
-    color: #0065FC;
-}
-
-.filter-pet {
+.filter-logo {
     border: #DEEBFF solid;
     background-color: #DEEBFF;
     padding: 15px;
@@ -136,3 +116,17 @@ input {
     color: #0065FC;
 }
 
+.filter-button {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    border-top: 3px #f2f2f2 solid;
+    border-right: 3px #f2f2f2 solid;
+    border-bottom: 3px #f2f2f2 solid;
+    border-radius: 30px;
+}
+
+/* N'affecte que les paragraphes (<p>) qui sont dans une balise qui a la classe 'filter-button' */
+.filter-button > p {
+    padding: 0px 15px 0px 15px;
+    font-family: "ralewaybold";
+}
