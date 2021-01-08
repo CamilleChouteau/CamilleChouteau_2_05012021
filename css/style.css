@@ -1,12 +1,78 @@
 body {
-    font-family: "Relaway-Regular";
+    font-family: "ralewayregular";
+    padding: 50px;
 }
 
 @font-face {
-    font-family: "Relaway-Regular";
-    src: url('Relaway-Regular.ttf');
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 ul {
     list-style-type: none;
 }
+
+.logo {
+    width: 96px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+ }
+
+ .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    padding: 0 68px;
+}
+
+a:hover {
+    color: #0065FC;
+}
+
+.signup-hyperlink {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+button {
+    background-color: #0065FC;
+    color: white;
+    text-align: center;
+    padding: 19px;
+    border-radius: 0px 15px 15px 0px;
+    font-family: 'ralewayregular';
+    margin: -5px;
+    font-weight: bold;
+    border: none;
+}
+
+input {
+    border: 2px #f2f2f2 solid;
+    padding: 17px;
+    font-weight: bold;
+    font-family: "ralewayregular"
+
+}
+
+.mapmarker {
+    border: #f2f2f2 solid;
+    padding: 16px 19px 18px 17px;;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    margin: -5px;
+}
+
+
