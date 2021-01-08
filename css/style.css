@@ -33,18 +33,20 @@ ul {
     margin: 0px;
 }
 
-a {
+.menu-hyperlink {
     outline: none;
     text-decoration: none;
     color: black;
     padding: 0 68px;
 }
 
-a:hover {
+.menu-hyperlink:hover {
     color: #0065FC;
 }
 
 .signup-hyperlink {
+    outline: none;
+    text-decoration: none;
     color: #0065FC;
     font-weight: bold;
 }
