@@ -1,246 +1,263 @@
 body {
-    font-family: "ralewayregular";
-    padding: 50px;
+  font-family: "ralewayregular";
+  padding: 50px;
 }
 
 /* Header + menu */
 
 .logo {
-    width: 96px;
+  width: 96px;
 }
 
 header {
-    display: grid;
-    grid-template-columns: min-content auto min-content;
- }
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+}
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
 }
 
 .menu-hyperlink {
-    outline: none;
-    text-decoration: none;
-    color: black;
-    padding: 0 68px;
+  outline: none;
+  text-decoration: none;
+  color: black;
+  padding: 0 68px;
 }
 
 .menu-hyperlink:hover {
-    color: #0065FC;
+  color: #0065fc;
 }
 
 .signup-hyperlink {
-    outline: none;
-    text-decoration: none;
-    color: #0065FC;
-    font-weight: bold;
+  outline: none;
+  text-decoration: none;
+  color: #0065fc;
+  font-weight: bold;
 }
 
 h1 {
-    font-family: "ralewaybold";
+  font-family: "ralewaybold";
 }
 
 /* Search button */
 
 .search-button {
-    display: grid;
-    grid-template-columns: min-content 234px min-content;
-    align-items: stretch;
-    grid-template-rows: 50px;
+  display: grid;
+  grid-template-columns: min-content 234px min-content;
+  align-items: stretch;
+  grid-template-rows: 50px;
 }
 button {
-    background-color: #0065FC;
-    color: white;
-    text-align: center;
-    padding: 0px 19px 0px 19px;
-    border-radius: 0px 15px 15px 0px;
-    font-family: 'ralewayregular';
-    font-weight: bold;
-    border: none;
+  background-color: #0065fc;
+  color: white;
+  text-align: center;
+  padding: 0px 19px 0px 19px;
+  border-radius: 0px 15px 15px 0px;
+  font-family: "ralewayregular";
+  font-weight: bold;
+  border: none;
 }
 button:hover {
-    background-color: #126ef8
-
-
+  background-color: #126ef8;
 }
 
 input {
-    border: 2px #f2f2f2 solid;
-    padding: 0px 17px 0px 17px;
-    font-weight: bold;
-    font-family: "ralewayregular"
+  border: 2px #f2f2f2 solid;
+  padding: 0px 17px 0px 17px;
+  font-weight: bold;
+  font-family: "ralewayregular";
 }
 
 /* Demander si je laisse en noir (moins ergonomique mais comme la maquette) ou en gris */
 input::placeholder {
-    color: black;
+  color: black;
 }
 
 .mapmarker {
-    border: #f2f2f2 solid;
-    padding: 0px 15px 0px 17px;;
-    background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+  border: #f2f2f2 solid;
+  padding: 0px 15px 0px 17px;
+  background-color: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Filters + logo info */
 
 .filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 30px;
-    padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 30px;
+  padding-top: 30px;
 }
 
 h3 {
-    font-family: "ralewaybold";
+  font-family: "ralewaybold";
 }
 
 .filters-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 24px;
-    cursor: pointer;.
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 24px;
+  cursor: pointer;
 }
 
 .filter-logo {
-    border: #DEEBFF solid;
-    background-color: #DEEBFF;
-    padding: 15px;
-    border-radius: 30px;
-    color: #0065FC;
+  border: #deebff solid;
+  background-color: #deebff;
+  padding: 15px;
+  border-radius: 30px;
+  color: #0065fc;
 }
 
 .filter-button {
-    display: grid;
-    grid-template-columns: min-content max-content;
-    border-top: 3px #f2f2f2 solid;
-    border-right: 3px #f2f2f2 solid;
-    border-bottom: 3px #f2f2f2 solid;
-    border-radius: 30px;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  border-top: 3px #f2f2f2 solid;
+  border-right: 3px #f2f2f2 solid;
+  border-bottom: 3px #f2f2f2 solid;
+  border-radius: 30px;
 }
 
 .filter-button:hover {
-    background-color: #0065FC;
-    color: white;
-    transition: background-color, 0.2s linear 0s;
-    -webkit-transition: background-color, 0.2s linear 0s;
+  background-color: #0065fc;
+  color: white;
+  transition: background-color, 0.2s linear 0s;
+  -webkit-transition: background-color, 0.2s linear 0s;
 }
 
 /* N'affecte que les paragraphes (<p>) qui sont dans la balise qui a la classe 'filter-button' */
 .filter-button p {
-    padding: 0px 15px 0px 15px;
-    font-family: "ralewaybold";
+  padding: 0px 15px 0px 15px;
+  font-family: "ralewaybold";
 }
 
 /* Logo info */
 .logo-info {
-    border: 3px #F2F2F2 solid;
-    padding: 5px 10px 5px 10px;
-    border-radius: 20px;
-    color: #0065FC;
+  border: 3px #f2f2f2 solid;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  color: #0065fc;
 }
 
 .info {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Lodgings in Marseille */
 
 .all-lodgings {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .lodgings {
-    background-color: #F2F2F2;
-    border-radius: 30px;
-    padding: 46px 40px 50px 40px;
-
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 46px 40px 50px 40px;
 }
 
 .lodgings h2 {
-    font-family: "ralewaybold";
+  font-family: "ralewaybold";
 }
 
 .lodging {
-    width: 236px;
-    height: 189px;
-    border: white solid 5px;
-    background-color: white;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 236px;
+  height: 189px;
+  border: white solid 5px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 15px 2px #c9c4c4aa;
+  transition: transform .15s;
 }
 
+.lodging:hover {
+transform: scale(1.05);
+}
 
+.lodging-details {
+  padding-left: 10px;
+}
 
 .lodging h4 {
-    margin: 0px;
-
+  margin: 2px 0px 2px 0px;
+  font-family: "ralewaybold";
 }
 
 .lodging p {
-    margin: 0px;
+  margin: 2px 0px 5px 0px;
+}
+
+.lodging strong {
+  font-family: "ralewaybold";
 }
 
 .lodging a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .star-filled {
-    color: #0065fc
+  color: #0065fc;
 }
 
 .star-empty {
-    color: #d9d9d9
+  color: #d9d9d9;
 }
-
 
 /* C'est pour que l'image fasse la taille de la case, sinon elle dépasse */
 
 .lodging img {
-    object-fit: cover;
+  object-fit: cover;
 
-    width: 100%;
-    height: 114px;
+  width: 100%;
+  height: 114px;
 }
 
 .lodgings-grid {
-    display: grid;
-    grid-template-columns: min-content min-content min-content; 
-    grid-template-rows: min-content min-content;
-    column-gap: 30px;
-    row-gap: 30px;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content min-content;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.show-more {
+  text-decoration: none;
+  color: black;
+  font-family: "ralewaybold";
+
+  display: block;
+  margin-top: 40px;
 }
 
 /* Popular lodgings */
 
 .popular-lodging {
-    width: 333px;
-    height: 134px;
+  width: 333px;
+  height: 134px;
 }
 
 .popular-lodging img {
-    object-fit: cover;
+  object-fit: cover;
 
-    width: 127px;
-    height: 100%
+  width: 127px;
+  height: 100%;
 }
