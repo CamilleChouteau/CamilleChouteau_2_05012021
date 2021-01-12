@@ -162,11 +162,15 @@ h3 {
 
 /* Lodgings in Marseille */
 
+/* Section Lodgings Flex */
+
 .all-lodgings {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
+
+/* Lodgings Background */
 
 .lodgings {
   background-color: #f2f2f2;
@@ -176,7 +180,10 @@ h3 {
 
 .lodgings h2 {
   font-family: "ralewaybold";
+  padding-top: 0px;
 }
+
+/* Style for one lodging card */
 
 .lodging {
   width: 236px;
@@ -232,6 +239,8 @@ transform: scale(1.05);
   height: 114px;
 }
 
+/* Grid card position */
+
 .lodgings-grid {
   display: grid;
   grid-template-columns: min-content min-content min-content;
@@ -239,6 +248,8 @@ transform: scale(1.05);
   column-gap: 30px;
   row-gap: 30px;
 }
+
+/* Show more link */
 
 .show-more {
   text-decoration: none;
@@ -251,6 +262,8 @@ transform: scale(1.05);
 
 /* Popular lodgings */
 
+/* Popular background */
+
 .most-popular {
   background-color: #f2f2f2;
   border-radius: 30px;
@@ -260,7 +273,7 @@ transform: scale(1.05);
 
 .most-popular h2 {
   font-family: "ralewaybold";
-
+  padding-top: 0px;
 }
 
 .arrow {
@@ -272,9 +285,13 @@ transform: scale(1.05);
   font-size: 1.7em;
 }
 
+
+
 .popular-grid a {
   text-decoration: none;
 }
+
+/* Style for one popular card */
 
 .popular-lodging {
   width: 333px;
@@ -293,6 +310,7 @@ transform: scale(1.05);
   box-shadow: 3px 3px 15px 2px #c9c4c4aa;
   transition: transform .15s;
 }
+
 
 .popular-lodging:hover {
 transform: scale(1.05);
@@ -328,23 +346,26 @@ h2 {
   padding-top: 60px;
 }
 
+/* Activities Grid */
+
 .activities-grid {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: 240px 240px;
-  align-items: stretch;
+  grid-template-rows: 80px 80px 80px 80px 80px;
   column-gap: 40px;
   row-gap: 40px;
 
   grid-template-areas:
     "activity1 activity2 activity4 activity5"
+    "activity1 activity2 activity4 activity5"
+    "activity1 activity2 activity4 activity6"
+    "activity1 activity3 activity4 activity6"
     "activity1 activity3 activity4 activity6";
 }
 
 .activity1 {
   grid-area: activity1;
 }
-
 .activity2 {
   grid-area: activity2;
 }
@@ -361,6 +382,8 @@ h2 {
   grid-area: activity6;
 }
 
+/* Activities Images */
+
 .activity {
   width: 100%;
   height: 100%;
@@ -368,7 +391,8 @@ h2 {
 
 .activities img {
   object-fit: cover;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 figure {
@@ -376,6 +400,8 @@ figure {
   overflow: hidden;
   box-shadow: 3px 3px 15px 2px #c9c4c4aa;
   transition: transform .15s;
+  position: relative;
+  margin: 0px;
 }
 
 figure:hover {
@@ -388,6 +414,13 @@ transform: scale(1.05);
 
 figure figcaption {
   color: black;
+  background-color: white;
+  width: 100%;
   font-family: "ralewaybold";
   padding: 25px 0px 20px 20px ;
+  position: absolute;
+  bottom: 0px;
 }
+
+/* Footer */
+
