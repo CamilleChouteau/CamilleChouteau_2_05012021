@@ -43,6 +43,10 @@ ul {
   padding: 0px 34px 0px 34px;
 }
 
+.lodgings-link  {
+  color: #0065fc;
+}
+
 .menu-hyperlink:hover {
   color: #0065fc;
 }
