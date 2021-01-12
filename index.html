@@ -27,7 +27,7 @@
 
       <nav>
         <ul class="menu">
-          <li><a class="menu-hyperlink" href="#">Hébergements</a></li>
+          <li class="lodgings-link"><div class="blue-rectangle"></div><a class="menu-hyperlink" href="#">Hébergements</a></li>
           <li><a class="menu-hyperlink" href="#">Activités</a></li>
         </ul>
       </nav>
@@ -42,7 +42,7 @@
 
       <section class="search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <p class="flair">En plein centre ville ou en pleine nature</p>
 
         <form class="search-button" method="post" action="traitement.php">
           <div class="mapmarker"><i class="fas fa-map-marker-alt"></i></div>
@@ -330,22 +330,31 @@
     </main>
 
     <footer>
-      <h3>A propos</h3>
-      <ul>
-        <li><a href="#">Fonctionnement du site</a></li>
-        <li><a href="#">Conditions générales de vente</a></li>
-        <li><a href="#">Données et confidentialité</a></li>
-      </ul>
-      <h3>Nos hébergements</h3>
-      <ul>
-        <li><a href="#">Charte qualité</a></li>
-        <li><a href="#">Soumettre votre hôtel</a></li>
-      </ul>
-      <h3>Assistance</h3>
-      <ul>
-        <li><a href="#">Centre d'aide</a></li>
-        <li><a href="#">Nous contacter</a></li>
-      </ul>
+      <div class="about">
+        <h3>A propos</h3>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div class="our-lodgings">
+        <h3>Nos hébergements</h3>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+
+      <div class="assistance">
+        <h3>Assistance</h3>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+
     </footer>
   </body>
 </html>

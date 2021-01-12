@@ -1,6 +1,6 @@
 body {
   font-family: "ralewayregular";
-  padding: 0px;
+  margin: 0px;
 }
 
 /* Header + menu */
@@ -17,19 +17,30 @@ header {
 
 ul {
   list-style-type: none;
+  padding: 0px;
 }
 
 .menu {
   display: flex;
   justify-content: flex-end;
-  margin: 0px;
+  margin: 0px 34px 0px 0px;
+}
+
+.blue-rectangle {
+  background-color:#0065fc;
+  width: 179px;
+  height: 2px;
+  
+  /* position:absolute sort le rectangle de la div et top:0px le met à 0px du haut de la page */
+  position: absolute;
+  top: 0px;
 }
 
 .menu-hyperlink {
   outline: none;
   text-decoration: none;
   color: black;
-  padding: 0 68px;
+  padding: 0px 34px 0px 34px;
 }
 
 .menu-hyperlink:hover {
@@ -45,6 +56,11 @@ ul {
 
 h1 {
   font-family: "ralewaybold";
+  margin-bottom: 0px;
+}
+
+.flair {
+  margin-top: 10px;
 }
 
 /* Search button + main */
@@ -431,6 +447,28 @@ figure figcaption {
 
 footer {
   background-color: #f2f2f2;
-  padding: 0px;
+  margin-top: 60px;
+  padding: 50px 50px 30px 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 227px;
+
+
+}
+
+footer h3 {
+  font-family: "ralewaybold";
+  margin-top: 0px;
+}
+
+footer a {
+text-decoration: none;
+color: black;
+}
+
+footer li {
+  padding-bottom: 20px;
 }
 
