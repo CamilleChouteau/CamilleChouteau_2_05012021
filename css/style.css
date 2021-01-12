@@ -1,6 +1,6 @@
 body {
   font-family: "ralewayregular";
-  padding: 50px;
+  padding: 0px;
 }
 
 /* Header + menu */
@@ -12,6 +12,7 @@ body {
 header {
   display: grid;
   grid-template-columns: min-content auto min-content;
+  padding: 50px 50px 0px 50px;
 }
 
 ul {
@@ -46,7 +47,11 @@ h1 {
   font-family: "ralewaybold";
 }
 
-/* Search button */
+/* Search button + main */
+
+main {
+  padding: 0px 50px 0px 50px;
+}
 
 .search-button {
   display: grid;
@@ -423,4 +428,9 @@ figure figcaption {
 }
 
 /* Footer */
+
+footer {
+  background-color: #f2f2f2;
+  padding: 0px;
+}
 
