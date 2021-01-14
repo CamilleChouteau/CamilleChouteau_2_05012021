@@ -203,7 +203,7 @@ button:focus {
 
 .all-lodgings {
   display: grid;
-  grid-template-columns: 7fr 1fr;
+  grid-template-columns: 7fr 3fr;
   grid-gap: 40px;
 }
 
@@ -223,8 +223,6 @@ button:focus {
 /* Style for one lodging card */
 
 .lodging {
-  width: 236px;
-  height: 189px;
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
@@ -328,8 +326,6 @@ button:focus {
 /* Style for one popular card */
 
 .popular-lodging {
-  width: 333px;
-  height: 134px;
   border: white solid 5px;
   background-color: white;
   border-radius: 20px;
@@ -339,7 +335,7 @@ button:focus {
   margin-top: 32px;
 
   display: grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: 2fr 3fr;
 
   box-shadow: 3px 3px 15px 2px #c9c4c4aa;
   transition: transform 0.15s;
@@ -351,9 +347,8 @@ button:focus {
 
 .popular-lodging img {
   object-fit: cover;
-
-  width: 127px;
   height: 100%;
+  width: 100%;
 }
 
 .popular-details {
