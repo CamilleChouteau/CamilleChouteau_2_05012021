@@ -1,10 +1,10 @@
 body {
   font-family: "ralewayregular";
-  margin: 0px;
+  margin: 0rem;
 }
 
 .webpage {
-  max-width: 90em;
+  max-width: 90rem;
   margin: auto;
 }
 
@@ -17,36 +17,36 @@ body {
 header {
   display: grid;
   align-items: center;
-  grid-template-columns: 8em auto min-content;
-  padding: 3.12em 7em 0em 3.12em;
+  grid-template-columns: 8rem auto min-content;
+  padding: 3.12rem 7rem 0rem 3.12rem;
 }
 
 ul {
   list-style-type: none;
-  padding: 0em;
+  padding: 0rem;
 }
 
 .menu {
   display: flex;
   justify-content: flex-end;
-  margin: 0em 2.1em 0em 0em;
+  margin: 0rem 2.1rem 0rem 0rem;
 }
 
 .blue-rectangle {
   background-color: #0065fc;
-  width: 11em;
-  height: 0.15em;
+  width: 11rem;
+  height: 0.15rem;
 
-  /* position:absolute sort le rectangle de la div et top:0px le met à 0px du haut de la page */
+  /* position:absolute sort le rectangle de la div et top:0rem le met à 0rem du haut de la page */
   position: absolute;
-  top: 0em;
+  top: 0rem;
 }
 
 .menu-hyperlink {
   outline: none;
   text-decoration: none;
   color: black;
-  padding: 0em 2.1em 0em 2.1em;
+  padding: 0rem 2.1rem 0rem 2.1rem;
 }
 
 .lodgings-link {
@@ -66,31 +66,31 @@ ul {
 
 h1 {
   font-family: "ralewaybold";
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .flair {
-  margin-top: 0.6em;
+  margin-top: 0.6rem;
 }
 
 /* Search button + main */
 
 main {
-  padding: 0em 3em 0em 3em;
+  padding: 0rem 3rem 0rem 3rem;
 }
 
 .search-button {
   display: grid;
-  grid-template-columns: min-content 14.6em min-content;
+  grid-template-columns: min-content 14.6rem min-content;
   align-items: stretch;
-  grid-template-rows: 3.1em;
+  grid-template-rows: 3.1rem;
 }
 
 .mapmarker {
   border: #f2f2f2 solid;
-  padding: 0em 0.93em 0em 1.06em;
+  padding: 0rem 0.93rem 0rem 1.06rem;
   background-color: #f2f2f2;
-  border-radius: 0.93em 0em 0em 0.93em;
+  border-radius: 0.93rem 0rem 0rem 0.93rem;
 
   display: flex;
   justify-content: center;
@@ -98,8 +98,8 @@ main {
 }
 
 input {
-  border: 0.12em #f2f2f2 solid;
-  padding: 0em 1.06em 0em 1.06em;
+  border: 0.12rem #f2f2f2 solid;
+  padding: 0rem 1.06rem 0rem 1.06rem;
   font-weight: bold;
   font-family: "ralewayregular";
 }
@@ -113,8 +113,8 @@ button {
   background-color: #0065fc;
   color: white;
   text-align: center;
-  padding: 0em 1.19em 0em 1.19em;
-  border-radius: 0em 0.93em 0.93em 0em;
+  padding: 0rem 1.19rem 0rem 1.19rem;
+  border-radius: 0rem 0.93rem 0.93rem 0rem;
   font-family: "ralewayregular";
   font-weight: bold;
   border: none;
@@ -134,12 +134,12 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  padding-top: 1.94em;
+  padding-top: 1.94rem;
 }
 
 .filters h3 {
   font-family: "ralewaybold";
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .filters-buttons {
@@ -152,19 +152,19 @@ button:focus {
 .filter-logo {
   border: #deebff solid;
   background-color: #deebff;
-  padding: 0.94em;
-  border-radius: 1.88em;
+  padding: 0.94rem;
+  border-radius: 1.88rem;
   color: #0065fc;
 }
 
 .filter-button {
   display: grid;
   grid-template-columns: min-content max-content;
-  border-top: 0.19em #f2f2f2 solid;
-  border-right: 0.19em #f2f2f2 solid;
-  border-bottom: 0.19em #f2f2f2 solid;
-  border-radius: 1.88em;
-  margin: 0em 0.94em 0em 0.94em;
+  border-top: 0.19rem #f2f2f2 solid;
+  border-right: 0.19rem #f2f2f2 solid;
+  border-bottom: 0.19rem #f2f2f2 solid;
+  border-radius: 1.88rem;
+  margin: 0rem 0.94rem 0rem 0.94rem;
 }
 
 .filter-button:hover {
@@ -176,25 +176,25 @@ button:focus {
 
 /* N'affecte que les paragraphes (<p>) qui sont dans la balise qui a la classe 'filter-button' */
 .filter-button p {
-  padding: 0em 0.94em 0em 0.94em;
+  padding: 0rem 0.94rem 0rem 0.94rem;
   font-family: "ralewaybold";
 }
 
 /* Logo info */
 .logo-info {
-  border: 0.19em #f2f2f2 solid;
-  padding: 0.31em 0.63em 0.31em 0.63em;
-  border-radius: 1.25em;
+  border: 0.19rem #f2f2f2 solid;
+  padding: 0.31rem 0.63rem 0.31rem 0.63rem;
+  border-radius: 1.25rem;
   color: #0065fc;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .info {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Lodgings in Marseille */
@@ -204,30 +204,30 @@ button:focus {
 .all-lodgings {
   display: grid;
   grid-template-columns: 7fr 3fr;
-  grid-gap: 40px;
+  grid-gap: 2.5rem;
 }
 
 /* Lodgings Background */
 
 .lodgings {
   background-color: #f2f2f2;
-  border-radius: 30px;
-  padding: 46px 40px 50px 40px;
+  border-radius: 1.88rem;
+  padding: 2.88rem 2.5rem 3.1rem 2.5rem;
 }
 
 .lodgings h2 {
   font-family: "ralewaybold";
-  padding-top: 0px;
+  padding-top: 0rem;
 }
 
 /* Style for one lodging card */
 
 .lodging {
-  border: white solid 5px;
+  border: white solid 0.31rem;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 3px 3px 15px 2px #c9c4c4aa;
+  box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
 }
 
@@ -236,16 +236,16 @@ button:focus {
 }
 
 .lodging-details {
-  padding-left: 10px;
+  padding-left: 0.62rem;
 }
 
 .lodging h4 {
-  margin: 2px 0px 2px 0px;
+  margin: 0.125rem 0rem 0.125rem 0rem;
   font-family: "ralewaybold";
 }
 
 .lodging p {
-  margin: 2px 0px 5px 0px;
+  margin: 0.125rem 0rem 0.31rem 0rem;
 }
 
 .lodging strong {
@@ -271,7 +271,7 @@ button:focus {
   object-fit: cover;
 
   width: 100%;
-  height: 114px;
+  height: 7.12rem;
 }
 
 /* Grid card position */
@@ -279,8 +279,8 @@ button:focus {
 .lodgings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  row-gap: 30px;
+  column-gap: 1.87rem;
+  row-gap: 1.87rem;
 }
 
 /* Show more link */
@@ -291,7 +291,7 @@ button:focus {
   font-family: "ralewaybold";
 
   display: block;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 /* Popular lodgings */
@@ -300,23 +300,23 @@ button:focus {
 
 .most-popular {
   background-color: #f2f2f2;
-  border-radius: 30px;
-  padding: 46px 35px 35px 35px;
-  position: relative;
+  border-radius: 1.87rem;
+  padding: 2.9rem 2.19rem 2.19rem 2.19rem;
+}
+
+.popular-header {
+  display: grid;
+  grid-template-columns: auto min-content;
+  align-items: center;
 }
 
 .most-popular h2 {
   font-family: "ralewaybold";
-  padding-top: 0px;
+  padding: 0rem;
 }
 
 .arrow {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  padding: 64px 40px 0px 0px;
-
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 
 .popular-grid a {
@@ -326,18 +326,18 @@ button:focus {
 /* Style for one popular card */
 
 .popular-lodging {
-  border: white solid 5px;
+  border: white solid 0.31rem;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 3px 3px 15px 2px #c9c4c4aa;
+  box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
-  margin-top: 32px;
+  margin-bottom: 2rem;
 
   display: grid;
   grid-template-columns: 2fr 3fr;
 
-  box-shadow: 3px 3px 15px 2px #c9c4c4aa;
+  box-shadow: 1.19rem 1.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
 }
 
@@ -353,60 +353,56 @@ button:focus {
 
 .popular-details {
   color: black;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 0.63rem;
+  padding-right: 1.25rem;
 }
 
 .popular-details h4 {
   font-family: "ralewaybold";
-  margin: 4px 0px 2px 0px;
+  margin: 0.25rem 0rem 0.125rem 0rem;
 }
 
 .popular-details p {
-  margin: 6px 0px 40px 0px;
+  margin: 0.37rem 0rem 2.5rem 0rem;
 }
 
 /* Activities */
 
-h2 {
+.activities {
+  margin-top: 3.75rem;
+}
+
+.activities h2 {
   font-family: "ralewaybold";
-  padding-top: 60px;
 }
 
 /* Activities Grid */
 
 .activities-grid {
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: 80px 80px 80px 80px 80px;
-  column-gap: 40px;
-  row-gap: 40px;
-
-  grid-template-areas:
-    "activity1 activity2 activity4 activity5"
-    "activity1 activity2 activity4 activity5"
-    "activity1 activity2 activity4 activity6"
-    "activity1 activity3 activity4 activity6"
-    "activity1 activity3 activity4 activity6";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 5rem);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 }
 
 .activity1 {
-  grid-area: activity1;
+  grid-row: 1 / span 5;
 }
 .activity2 {
-  grid-area: activity2;
+  grid-row: 1 / span 3;
 }
 .activity3 {
-  grid-area: activity3;
+  grid-row: 1 / span 5;
 }
 .activity4 {
-  grid-area: activity4;
+  grid-row: 1 / span 2;
 }
 .activity5 {
-  grid-area: activity5;
+  grid-row: 4 / span 2;
 }
 .activity6 {
-  grid-area: activity6;
+  grid-row: 3 / span 3;
 }
 
 /* Activities Images */
@@ -423,12 +419,12 @@ h2 {
 }
 
 figure {
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 3px 3px 15px 2px #c9c4c4aa;
+  box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
   position: relative;
-  margin: 0px;
+  margin: 0rem;
 }
 
 figure:hover {
@@ -444,27 +440,30 @@ figure figcaption {
   background-color: white;
   width: 100%;
   font-family: "ralewaybold";
-  padding: 25px 0px 20px 20px;
+  padding: 1.56rem 0rem 1.25rem 1.25rem;
   position: absolute;
-  bottom: 0px;
+  bottom: 0rem;
 }
 
 /* Footer */
 
 footer {
   background-color: #f2f2f2;
-  margin-top: 60px;
-  padding: 50px 50px 30px 50px;
+  margin-top: 3.75rem;
+  padding: 3.125rem 3.125rem 1.88rem 3.125rem;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  gap: 227px;
+}
+
+.footer-item {
+  margin-right: 14.19rem;
 }
 
 footer h3 {
   font-family: "ralewaybold";
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 
 footer a {
@@ -473,5 +472,5 @@ footer a {
 }
 
 footer li {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
