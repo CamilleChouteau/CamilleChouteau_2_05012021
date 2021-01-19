@@ -134,12 +134,12 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  padding-top: 1.94rem;
+  padding-top: 0.94rem;
 }
 
 .filters h3 {
   font-family: "ralewaybold";
-  margin-right: 1rem;
+  margin: 2rem 1rem 0rem 0rem;
 }
 
 .filters-buttons {
@@ -164,7 +164,7 @@ button:focus {
   border-right: 0.19rem #f2f2f2 solid;
   border-bottom: 0.19rem #f2f2f2 solid;
   border-radius: 1.88rem;
-  margin: 0rem 0.94rem 0rem 0.94rem;
+  margin: 1rem 0.94rem 0rem 0.94rem;
 }
 
 .filter-button:hover {
@@ -452,13 +452,9 @@ footer {
   margin-top: 3.75rem;
   padding: 3.125rem 3.125rem 1.88rem 3.125rem;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-}
-
-.footer-item {
-  margin-right: 14.19rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;;
 }
 
 footer h3 {
@@ -473,4 +469,68 @@ footer a {
 
 footer li {
   padding-bottom: 1.25rem;
+}
+
+/***********************************************************************
+******************* PASSAGE AUx MEDIA QUERIES **************************
+************************************************************************
+***************************** TABLETTE *********************************/
+
+@media only screen and (max-width: 1200px) {
+/* Style tablette */
+
+.all-lodgings {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.popular-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-details {
+  text-align: center;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 5rem);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+
+  .activity1 {
+    grid-row: 1 / span 5;
+  }
+  .activity2 {
+    grid-row: 1 / span 3;
+  }
+  .activity3 {
+    grid-row: 6 / span 5;
+  }
+  .activity4 {
+    grid-row: 6 / span 2;
+  }
+  .activity5 {
+    grid-row: 4 / span 2;
+  }
+  .activity6 {
+    grid-row: 8 / span 3;
+  }
+
+}
+
+/***********************************************************************
+******************* PASSAGE AUX MEDIA QUERIES **************************
+************************************************************************
+***************************** MOBILE **********************************/
+
+@media screen and (max-width: 650px) {
+  /* Style mobile */
+
+ 
+
+
+
 }
