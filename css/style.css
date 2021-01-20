@@ -361,7 +361,7 @@ button:focus {
 
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: min-content;
 
   box-shadow: 1.19rem 1.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
@@ -383,7 +383,6 @@ button:focus {
   padding-right: 1.25rem;
   padding-bottom: 0.5rem;
 }
-
 
 .popular-details h4 {
   font-family: "ralewaybold";
