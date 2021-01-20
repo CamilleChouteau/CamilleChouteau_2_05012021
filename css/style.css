@@ -129,6 +129,11 @@ button:focus {
   outline: none;
 }
 
+.search-icon {
+  display: none;
+}
+
+
 /******************** FILTERS + LOGO ************************/
 
 .filters {
@@ -481,7 +486,7 @@ footer li {
 }
 
 /***********************************************************************
-******************* PASSAGE AUx MEDIA QUERIES **************************
+******************* PASSAGE AUX MEDIA QUERIES **************************
 ************************************************************************
 ***************************** TABLETTE *********************************/
 
@@ -591,16 +596,134 @@ footer li {
   /********** SEARCH BUTTON ********/
 
   main {
-    padding: 0rem 1.5rem 0rem 1.5rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .search h1 {
+    margin-left: 1.5rem;
   }
 
   .flair {
-    margin-bottom: 2rem;
+    margin: 0.5rem 0rem 2rem 1.5rem;
   }
 
+  .mapmarker {
+    font-size: 1.3rem;
+  }
+  
+  input {
+    font-family: "ralewaysemibold";
+    font-size: 1.15rem;
+    margin-right: -2rem;
+
+  }
+
+  button {
+    border-radius: 0.93rem 0.93rem 0.93rem 0.93rem;
+    font-family: "ralewayregular";
+    font-weight: bold;
+  }
+
+  .rechercher {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+    font-size: 1.15rem;
+  }
+
+  .search-button {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  /******************* FILTERS **********************/
+
+  .filters h3 {
+    margin-left: 1.5rem;
+  }
+
+  .info {
+    margin-left: 1.5rem;
+  }
+
+  /************ MOST POPULAR ****************/
+
+  .most-popular {
+    border-radius: 0rem;
+  }
+
+  .popular-header {
+    margin-bottom: 1rem;
+  }
+  .popular-details {
+    margin: 0.7rem 1.5rem 0.7rem 0.5rem;
+    text-align: left;
+  }
+  .popular-lodging {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  }
+
+  /**************** LODGINGS IN MARSEILLE ***********/
+
+  .lodgings {
+    background-color: white;
+    padding-top: 0rem;
+  }
+
+  .lodgings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .show-more {
+    font-size: 1.2rem;
+  }
+
+/**************** ACTIVITIES *********************/
+
+ .activities {
+   margin: 0rem 1.5rem 0rem 1.5rem;
+ }
+
+ .activities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 15rem);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  margin-top: 1.7rem;
+  }
+
+.activity1 {
+  grid-row: 1 / span 1;
+}
+.activity2 {
+  grid-row: 2 / span 1;
+}
+.activity3 {
+  grid-row: 3 / span 1;
+}
+.activity4 {
+  grid-row: 4 / span 1;
+}
+.activity5 {
+  grid-row: 5 / span 1;
+}
+.activity6 {
+  grid-row: 6 / span 1;
+}
+
+/************** FOOTER *************************/
 
 
-
+footer {
+display: grid;
+grid-template-columns: 1fr;
+}
 
 
 
