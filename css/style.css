@@ -49,7 +49,7 @@ ul {
   padding: 0rem 2.1rem 0rem 2.1rem;
 }
 
-.lodgings-link {
+.lodgings-hyperlink {
   color: #0065fc;
 }
 
@@ -107,6 +107,7 @@ input {
 /* Demander si je laisse en noir (moins ergonomique mais comme la maquette) ou en gris */
 input::placeholder {
   color: black;
+  font-size: 0.9rem;
 }
 
 button {
