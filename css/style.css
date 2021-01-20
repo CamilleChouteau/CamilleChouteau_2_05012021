@@ -116,12 +116,6 @@ input {
   font-family: "ralewayregular";
 }
 
-/* Demander si je laisse en noir (moins ergonomique mais comme la maquette) ou en gris */
-input::placeholder {
-  color: black;
-  font-size: 0.9rem;
-}
-
 button {
   background-color: #0065fc;
   color: white;
@@ -132,6 +126,7 @@ button {
   font-weight: bold;
   border: none;
 }
+
 button:hover {
   background-color: #126ef8;
 }
@@ -519,10 +514,6 @@ footer li {
     flex-wrap: wrap;
   }
 
-  .popular-details {
-    text-align: center;
-  }
-
   .activities-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -629,13 +620,14 @@ footer li {
   input {
     font-family: "ralewaysemibold";
     font-size: 1.15rem;
-    margin-right: -2rem;
+    width: 100%;
   }
 
   button {
     border-radius: 0.93rem 0.93rem 0.93rem 0.93rem;
     font-family: "ralewayregular";
     font-weight: bold;
+    transform: translateX(-0.6rem)
   }
 
   .rechercher {
