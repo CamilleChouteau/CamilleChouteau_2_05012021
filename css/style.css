@@ -96,7 +96,6 @@ h1 {
 .search-button {
   display: grid;
   grid-template-columns: min-content 14.6rem min-content;
-  align-items: stretch;
   grid-template-rows: 3.1rem;
 }
 
@@ -107,7 +106,6 @@ h1 {
   border-radius: 0.93rem 0rem 0rem 0.93rem;
 
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -143,8 +141,8 @@ button:focus {
   outline: none;
 }
 
-.search-icon {
-  display: none;
+.search-icon { 
+  display: none; /*cache la loupe en mode desktop*/
 }
 
 /******************** FILTERS + LOGO ************************/
@@ -363,6 +361,7 @@ button:focus {
 
   display: grid;
   grid-template-columns: 2fr 3fr;
+  grid-template-rows: repeat(3, min-content);
 
   box-shadow: 1.19rem 1.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
@@ -382,12 +381,9 @@ button:focus {
   color: black;
   padding-left: 0.63rem;
   padding-right: 1.25rem;
+  padding-bottom: 0.5rem;
 }
 
-.stars {
-  display: flex;
-  align-content:flex-end;
-}
 
 .popular-details h4 {
   font-family: "ralewaybold";
