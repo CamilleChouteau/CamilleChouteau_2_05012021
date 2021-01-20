@@ -219,7 +219,7 @@ button:focus {
 .lodgings {
   background-color: #f2f2f2;
   border-radius: 1.88rem;
-  padding: 2.88rem 2.5rem 3.1rem 2.5rem;
+  padding: 2.88rem 2.5rem 3rem 2.5rem;
 }
 
 .lodgings h2 {
@@ -311,6 +311,7 @@ button:focus {
   background-color: #f2f2f2;
   border-radius: 1.87rem;
   padding: 2.9rem 2.19rem 2.19rem 2.19rem;
+
 }
 
 .popular-header {
@@ -330,9 +331,10 @@ button:focus {
 
 .popular-grid a {
   text-decoration: none;
+  width: 100%;
 }
 
-/***************** STYLE FOR ON POPULAR CARD ************/
+/***************** STYLE FOR ONE POPULAR CARD ************/
 
 .popular-lodging {
   border: white solid 0.31rem;
@@ -342,6 +344,8 @@ button:focus {
   box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
   margin-bottom: 2rem;
+  width: 100%;
+
 
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -355,15 +359,20 @@ button:focus {
 }
 
 .popular-lodging img {
-  object-fit: cover;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .popular-details {
   color: black;
   padding-left: 0.63rem;
   padding-right: 1.25rem;
+}
+
+.stars {
+  display: flex;
+  align-content:flex-end;
 }
 
 .popular-details h4 {
