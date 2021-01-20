@@ -4,26 +4,34 @@ body {
 }
 
 .webpage {
-  max-width: 90rem;
+  max-width: 90rem; 
   margin: auto;
+  /*Pour éviter que la page soit trop large, 
+  et soit centrée en plein écran*/
 }
 
 /***************** HEADER + MENU ******************/
+
+header {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 8rem 1fr min-content; /*8rem pour que le logo ne soit jamais trop gros*/
+  grid-template-rows: 6rem;
+  padding: 0rem 7rem 0rem 3.12rem;
+}
 
 .logo {
   width: 100%;
 }
 
-header {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 8rem auto min-content;
-  padding: 3.12rem 7rem 0rem 3.12rem;
+.logo-hyperlink {
+  align-self: center;
 }
 
 ul {
   list-style-type: none;
   padding: 0rem;
+  height: 100%;
 }
 
 .menu {
@@ -32,18 +40,20 @@ ul {
   margin: 0rem 2.1rem 0rem 0rem;
 }
 
-.blue-rectangle {
-  background-color: #0065fc;
-  width: 11rem;
-  height: 0.15rem;
+.menu li {
+  display: grid;
+  align-items: center;
+}
 
-  /* position:absolute sort le rectangle de la div et top:0rem le met à 0rem du haut de la page */
-  position: absolute;
-  top: 0rem;
+.lodgings-link {
+  border-top: 0.15rem #0065fc solid;
+}
+
+.activities-link {
+  margin-top: 0.15rem;
 }
 
 .menu-hyperlink {
-  outline: none;
   text-decoration: none;
   color: black;
   padding: 0rem 2.1rem 0rem 2.1rem;
@@ -57,8 +67,12 @@ ul {
   color: #0065fc;
 }
 
+.signup {
+  align-self: center;
+  margin-top: 0.15rem;
+}
+
 .signup-hyperlink {
-  outline: none;
   text-decoration: none;
   color: #0065fc;
   font-family: "ralewaybold";
@@ -554,7 +568,8 @@ footer li {
   header {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding: 1.2rem 0rem 0rem 0rem;
+    grid-template-rows: auto;
+    padding: 1.2rem 0rem 1.5rem 0rem;
   }
 
   nav {
@@ -577,7 +592,7 @@ footer li {
     margin-right: 0rem;
     justify-items: stretch;
     text-align: center;
-    padding: 1.5rem 0rem 1rem 0rem;
+    padding: 0.5rem 0rem 1rem 0rem;
   }
 
   .menu-hyperlink {
@@ -585,8 +600,8 @@ footer li {
   }
 
   .lodgings-link {
-    border-bottom: 3px #0065fc solid;
-    padding-bottom: 1rem;
+    border-top: none;
+    border-bottom: 0.15rem #0065fc solid;
   }
 
   .lodgings-hyperlink {
@@ -594,12 +609,9 @@ footer li {
   }
 
   .activities-link {
-    border-bottom: 3px #f2f2f2 solid;
+    border-bottom: 0.15rem #f2f2f2 solid;
   }
 
-  .blue-rectangle {
-    display: none;
-  }
 
   /********** SEARCH BUTTON ********/
 
