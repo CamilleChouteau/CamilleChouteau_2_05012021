@@ -4,7 +4,7 @@ body {
 }
 
 .webpage {
-  max-width: 90rem; 
+  max-width: 90rem;
   margin: auto;
   /*Pour éviter que la page soit trop large, 
   et soit centrée en plein écran*/
@@ -68,11 +68,6 @@ ul {
   padding-top: 2rem;
 }
 
-.signup:hover {
-  border-top: 0.15rem #0065fc solid;
-  padding-top: 2rem;
-}
-
 /******************* SEARCH BUTTON + MAIN *****************/
 
 main {
@@ -131,7 +126,7 @@ button:focus {
   outline: none;
 }
 
-.search-icon { 
+.search-icon {
   display: none; /*cache la loupe en mode desktop*/
 }
 
@@ -236,7 +231,7 @@ button:focus {
   background-color: white;
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
+  box-shadow: 0.2rem 0.2rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
 }
 
@@ -313,7 +308,6 @@ button:focus {
   background-color: #f2f2f2;
   border-radius: 1.87rem;
   padding: 2.9rem 2.19rem 2.19rem 2.19rem;
-
 }
 
 .popular-header {
@@ -343,17 +337,16 @@ button:focus {
   background-color: white;
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
+  box-shadow: 0.2rem 0.2rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
   margin-bottom: 2rem;
   width: 100%;
-
 
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: min-content;
 
-  box-shadow: 1.19rem 1.19rem 0.94rem 0.125rem #c9c4c4aa;
+  box-shadow: 0.5rem 0.5rem 2rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
 }
 
@@ -440,7 +433,7 @@ button:focus {
 figure {
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0.19rem 0.19rem 0.94rem 0.125rem #c9c4c4aa;
+  box-shadow: 0.2rem 0.2rem 0.94rem 0.125rem #c9c4c4aa;
   transition: transform 0.15s;
   position: relative;
   margin: 0rem;
@@ -504,6 +497,7 @@ footer li {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .popular-grid {
     display: flex;
     flex-wrap: wrap;
@@ -549,7 +543,7 @@ footer li {
   header {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto; /** Checker pour mieux ?*/
     padding: 1.2rem 0rem 0rem 0rem;
   }
 
@@ -596,10 +590,6 @@ footer li {
     border-top: none;
   }
 
-  .signup:hover {
-    border: none;
-  }
-  
   /********** SEARCH BUTTON ********/
 
   main {
