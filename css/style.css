@@ -31,7 +31,6 @@ header {
 ul {
   list-style-type: none;
   padding: 0rem;
-  height: 100%;
 }
 
 .menu {
@@ -45,37 +44,33 @@ ul {
   align-items: center;
 }
 
-.lodgings-link {
-  border-top: 0.15rem #0065fc solid;
-}
-
-.activities-link {
-  margin-top: 0.15rem;
-}
-
 .menu-hyperlink {
   text-decoration: none;
   color: black;
-  padding: 0rem 2.1rem 0rem 2.1rem;
-}
-
-.lodgings-hyperlink {
-  color: #0065fc;
-}
-
-.menu-hyperlink:hover {
-  color: #0065fc;
+  padding: 2rem 2.1rem 0rem 2.1rem;
 }
 
 .signup {
-  align-self: center;
-  margin-top: 0.15rem;
+  padding: 2rem 0rem 0rem 0.5rem;
 }
 
 .signup-hyperlink {
   text-decoration: none;
   color: #0065fc;
   font-family: "ralewaybold";
+}
+
+/******************* HOVER MENU *****************************/
+
+.menu-hyperlink:hover {
+  color: #0065fc;
+  border-top: 0.15rem #0065fc solid;
+  padding-top: 2rem;
+}
+
+.signup:hover {
+  border-top: 0.15rem #0065fc solid;
+  padding-top: 2rem;
 }
 
 /******************* SEARCH BUTTON + MAIN *****************/
@@ -548,14 +543,14 @@ footer li {
 ***************************** MOBILE **********************************/
 
 @media screen and (max-width: 650px) {
-  /* Style mobile */
+  /********* STYLE MOBILE ************/
 
   /********* HEADER *******/
   header {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
-    padding: 1.2rem 0rem 1.5rem 0rem;
+    padding: 1.2rem 0rem 0rem 0rem;
   }
 
   nav {
@@ -569,7 +564,7 @@ footer li {
   }
 
   .logo {
-    padding-left: 1.5rem;
+    padding: 1rem 0rem 0rem 1.5rem;
   }
 
   .menu {
@@ -582,23 +577,29 @@ footer li {
   }
 
   .menu-hyperlink {
-    padding: 0rem;
-  }
-
-  .lodgings-link {
-    border-top: none;
-    border-bottom: 0.15rem #0065fc solid;
+    padding: 2rem 0rem 1rem 0rem;
   }
 
   .lodgings-hyperlink {
-    color: #0065fc;
+    border-bottom: 0.15rem #f2f2f2 solid;
   }
 
   .activities-link {
     border-bottom: 0.15rem #f2f2f2 solid;
   }
 
+  /************ HOVER MENU *************/
 
+  .menu-hyperlink:hover {
+    color: #0065fc;
+    border-bottom: 0.15rem #0065fc solid;
+    border-top: none;
+  }
+
+  .signup:hover {
+    border: none;
+  }
+  
   /********** SEARCH BUTTON ********/
 
   main {
@@ -627,7 +628,7 @@ footer li {
     border-radius: 0.93rem 0.93rem 0.93rem 0.93rem;
     font-family: "ralewayregular";
     font-weight: bold;
-    transform: translateX(-0.6rem)
+    transform: translateX(-0.6rem);
   }
 
   .rechercher {
