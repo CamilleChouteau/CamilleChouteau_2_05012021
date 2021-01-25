@@ -498,11 +498,6 @@ footer li {
     flex-direction: column-reverse;
   }
 
-  .popular-grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .activities-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -619,7 +614,7 @@ footer li {
   }
 
   .search-icon {
-    display: block;
+    display: block; /*pour qu'il aparaisse à l'écran, à l'inverse du display:none; qui fait disparaitre*/
     font-size: 1.15rem;
   }
 
